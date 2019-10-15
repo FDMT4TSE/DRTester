@@ -14,5 +14,37 @@ The above figure illustrates the *DRTester* framework, comprising four main part
 
  We next examine each component in the framework individually.
 
+### Interface
 
 
+
+ We developed this html interface by using the Vue framewok (https://cn.vuejs.org/), which can be obtained by visiting https://github.com/phantomDai/DRTester.
+git. 
+
+Once downloading the source code, the user needs to set up the local environment as follows:
+
+- download and install *node.js*
+- execute the command: npm install vue -g 
+- execute the command: npm install vue-cli -g
+
+After the environment is configured, the user need to go to the downloaded files directory, and execute the following command:
+
+```
+npm run dev
+```
+
+After the user completes the above steps, he can enter http://localhost:8080 in his browser. Accordingly, the *Guidance* page is visible, describes the steps users  should follow when testing a web service.
+
+![1571128779261](C:\Users\phant\AppData\Roaming\Typora\typora-user-images\1571128779261.png)
+
+Then user can parse wsdl, set parameters, partition input domain, generate test cases, and download test report in the following interfaces.
+
+![1571129087811](C:\Users\phant\AppData\Roaming\Typora\typora-user-images\1571129087811.png)
+
+![1571129104962](C:\Users\phant\AppData\Roaming\Typora\typora-user-images\1571129104962.png)
+
+![1571129121808](C:\Users\phant\AppData\Roaming\Typora\typora-user-images\1571129121808.png)
+
+## WSDL parsing web service 
+
+In order to obtain the necessary 
