@@ -1,6 +1,11 @@
+
+
 # DRTester
 
 The prototype tool *DRTester* can test web services using dynimic random testing techbique. We describe the implemention and configuration of the tool in detail.
+
+## Table of contents
+[TOC]
 
 ## Framework of DRTester
 
@@ -47,4 +52,13 @@ Then user can parse wsdl, set parameters, partition input domain, generate test 
 
 ## WSDL parsing web service 
 
-In order to obtain the necessary 
+In order to obtain the necessary to generate test cases and automatically invoke web service under test, we need to parse wsdl of web service under test. Accordingly, a web service has been developed to obtain all methods of web service under test, and their parameters information (name and type). Besides, we also made this web service publicly accessible (https://github.com/phantomDai/parseesdlws.git). 
+
+## Micro services
+
+The back-end logic is composed of several Restful APIs and Java classes: The APIs are responsible for communicating HTTP messages to and from the front-end interface. The controller class is responsible for updating the test profile according to the test results, and for selecting test cases from the partitions. The selected test cases are wrapped in SOAP messages and sent to the web service under test through the proxy class, which also intercepts the test results.
+
+
+
+
+
