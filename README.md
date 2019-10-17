@@ -65,11 +65,11 @@ After the user completes the above steps, he can enter http://localhost:8080 in 
 
 Then user can parse wsdl, set parameters, partition input domain, generate test cases, and download test report in the following interfaces.
 
-![1571129087811](pictures\blank\1.png)
+![1571129087811](https://github.com/phantomDai/DRTester/raw/master/pictures/blank/1.png)
 
-![1571129104962](pictures\blank\2.png)
+![1571129104962](https://github.com/phantomDai/DRTester/raw/master/pictures/blank/2.png)
 
-![1571129121808](pictures\blank\3.png)
+![1571129121808](https://github.com/phantomDai/DRTester/raw/master/pictures/blank/3.png)
 
 ## WSDL parsing web service 
 
@@ -110,17 +110,17 @@ The details of testing steps are as follows.
 
 Users first need to enter the address of the WSDL of web service under test (WSUT), and click "Parse" button, and then a method of WSUT can be selected in the  following drop-down menu (as shown in following figures).
 
-![entering the address of WSDL of WSUT and selecting a method to test](pictures\微信图片_20191017170455.png)
+![entering the address of WSDL of WSUT and selecting a method to test](https://github.com/phantomDai/DRTester/raw/master/pictures/微信图片_20191017170455.png)
 
  Users must partition each parameter into disjoint options, and describe them according to predefined rules that are introduced in ***Guidance*** page (as shown in the following figure).
 
-![](pictures\微信图片_20191017170436.png)
+![](https://github.com/phantomDai/DRTester/raw/master/pictures/微信图片_20191017170436.png)
 
 ### Step 2: Partition construction and parameter setting
 
 Users must partition input domain by combining options with different parameters of selected method (as shown in following figure).
 
-  ![](pictures\微信图片_20191017170500.png)
+  ![](https://github.com/phantomDai/DRTester/raw/master/pictures/微信图片_20191017170500.png)
 
  ### Step 3: Test case preparation
 
