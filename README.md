@@ -61,7 +61,7 @@ npm run dev
 
 After the user completes the above steps, he can enter http://localhost:8080 in his browser. Accordingly, the *Guidance* page is visible, describes the steps users  should follow when testing a web service.
 
-![guidance](pictures\blank\guidance.png)
+![guidance](https://github.com/phantomDai/DRTester/raw/master/pictures/blank/guidance.png)
 
 Then user can parse wsdl, set parameters, partition input domain, generate test cases, and download test report in the following interfaces.
 
