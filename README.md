@@ -64,10 +64,13 @@ with
 ```
 url: 'http://IP<sup>*</sup>:8080/api/parse/wsdl'
 ```
-,where IP<sup>*</sup> is the address of usrs' IP. 
+,where IP<sup>*</sup> is the address of usrs' IP. Finally, uses can execute the following command and input "http://localhost:8080" in their browsers.
+```
+npm run dev
+```
 
-
-
+The fiest page of front-end interface is *Guidance* (as shown following figure), where 
+![guidance](https://github.com/phantomDai/DRTester/raw/master/pictures/blank/guidance.png)
 
 
 
