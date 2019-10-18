@@ -1,6 +1,6 @@
 
 
-# Table of content
+# Table of contents
 
 [TOC]
 
