@@ -2,22 +2,22 @@
 
 # Table of contents
 
-Table of contents
-DRTester
-  Framework
-  Front-end interface
-  Back-end logic
-    WSDL parsing
-    Restful APIs
-Configuration
-  Configuration for front-end interface
-  Configuration for back-end logic
-An example
-  The speci􀃦cation of web service under test
-  Step 1: Specifying url and setting parameters
-  Step 2: Partition construction and parameter setting
-  Step 3: Test case preparation
-  Step 4: Test case execution
+Table of contents <br>
+DRTester <br>
+  Framework <br>
+  Front-end interface <br>
+  Back-end logic <br>
+    WSDL parsing <br>
+    Restful APIs <br>
+Configuration <br>
+  Configuration for front-end interface <br>
+  Configuration for back-end logic <br>
+An example <br>
+  The speci􀃦cation of web service under test <br>
+  Step 1: Specifying url and setting parameters <br>
+  Step 2: Partition construction and parameter setting <br>
+  Step 3: Test case preparation <br>
+  Step 4: Test case execution <br>
 
 # DRTester
 
