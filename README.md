@@ -4,20 +4,20 @@
 
 Table of contents <br>
 DRTester <br>
-&nbsp;Framework <br>
-Front-end interface <br>
-Back-end logic <br>
-WSDL parsing <br>
-Restful APIs <br>
+&nbsp;&nbsp;Framework <br>
+&nbsp;&nbsp;Front-end interface <br>
+&nbsp;&nbsp;Back-end logic <br>
+&nbsp;&nbsp;&nbsp;&nbsp;WSDL parsing <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Restful APIs <br>
 Configuration <br>
-Configuration for front-end interface <br>
-Configuration for back-end logic <br>
+&nbsp;&nbsp;Configuration for front-end interface <br>
+&nbsp;&nbsp;Configuration for back-end logic <br>
 An example <br>
-The speci􀃦cation of web service under test <br>
-Step 1: Specifying url and setting parameters <br>
-Step 2: Partition construction and parameter setting <br>
-Step 3: Test case preparation <br>
-Step 4: Test case execution <br>
+&nbsp;&nbsp;The speci􀃦cation of web service under test <br>
+&nbsp;&nbsp;Step 1: Specifying url and setting parameters <br>
+&nbsp;&nbsp;Step 2: Partition construction and parameter setting <br>
+&nbsp;&nbsp;Step 3: Test case preparation <br>
+&nbsp;&nbsp;Step 4: Test case execution <br>
 
 # DRTester
 
