@@ -10,21 +10,21 @@ The prototype tool *DRTester* supports dynamic random testing technique for web 
 
 ## Framework
 
-![The framework of DRTester](https://github.com/phantomDai/DRTester/raw/master/pictures/framework.png)
+![The framework of DRTester](https://github.com/phantomDai/DRTester/raw/master/pictures/Framework.png)
 
-The above figure illustrates the *DRTester* framework comprising four main components, corresponding to web service under test; the *interface* between the user and *DRTester*; WSDL parsing service is responsible to parse WSDL file of web service under test; and Restful micro-services that are used to divide input domain, generate test cases, execute test case, and send information to the *interface*. 
+The above figure illustrates the *DRTester* framework comprising four main components, corresponding to web service under test; the *interface* between the user and *DRTester*; WSDL parsing service is responsible for parsing WSDL file of web service under test; and Restful micro-services that are used to divide input domain, generate test cases, execute test case, and send information to the *interface*. 
 
 We next examine each component in the framework individually.
 
 ## Front-end interface
 
-We developed three HTML pages by using the Vue framework (https://cn.vuejs.org/),  its source codes are available by visiting https://github.com/phantomDai/DRTester.git. 
+We developed three HTML pages by using the Vue framework (https://cn.vuejs.org/),  their source codes are available by visiting https://github.com/phantomDai/DRTester.git. 
 
 This *interface* wraps the setting information in the HTTP messages, and sends them to several  Restful micro-services that are not only  responsible for communicating with this *interface* but also wrap the selected test cases in SOAP messages, and send them to the web service under test.
 
 ## Back-end logic
 
-In this section, we describe the implementation of back-end logic, which comprises two parts: 1) a web service that is responsible for parsing WSDL file of web service under test; 2) several Restful micro-services.
+In this section, we describe the implementation of back-end logic, which comprises two parts: 1) a WSDL parsing web service; 2) several Restful micro-services.
 
 ### WSDL parsing service
 
@@ -55,7 +55,7 @@ The users need to set up the local environment as follows:
 	npm install vue-cli -g
 	```
 
-After the front-end environment is configured, the user can download the source code by visiting the linkage: https://github.com/phantomDai/DRTester.git. Next, the user needs to go the the root directory of the downloaded file, and create a directory named "node_modules". Then the user need to execute the following command in DOS.
+After the front-end environment is configured, the user downloads the source codes by visiting the linkage: https://github.com/phantomDai/DRTester.git. Next, the user needs to go the the root directory of the downloaded file, and create a directory named "node_modules". Then the user needs to execute the following command in DOS.
 	```
 	npm install (if in China, please execute command: cnpm install)
 	```
@@ -68,7 +68,7 @@ with
 ```
 url: 'http://XXX.XXX.XXX.XXX:8080/api/parse/wsdl' (user's IP address)
 ```
-Finally, the user executes the following command and inputs "http://localhost:8080" in her browser.
+Finally, the user executes the following command in DOS and inputs "http://localhost:8080" in her browser.
 ```
 npm run dev
 ```
@@ -129,7 +129,7 @@ Aviation consignment management service (ACMS) (that is available by visiting th
 
 ### Step 1: Specifying url and setting parameters
 
-The user first needs to enter the address of the WSDL of web service under test, and click "Parse" button, and then select a interested method of web service under test in the  following drop-down menu (as shown in following figure).
+The user first needs to enter the address of the WSDL of web service under test, and click the "Parse" button, and then select a interested method of web service under test in the  following drop-down menu (as shown in following figure).
 
 ![entering the address of WSDL of WSUT and selecting a method to test](https://github.com/phantomDai/DRTester/raw/master/pictures/微信图片_20191017170455.png)
 
