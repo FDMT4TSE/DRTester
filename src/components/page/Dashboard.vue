@@ -19,9 +19,9 @@
             </h3>
             <p class="content">
                 Considering the principle of DRT and the features of web services, we propose a DRT 
-                for web services framework, as illustrated in blow. In the figure, the DRT components 
-                are inside the testing box, the practitioner interaction is represented in the initialization box
-                , and the web services under test are located outside. Interactions between DRT components, practitioner
+                for web services framework, as illustrated below. In the figure, the DRT components 
+                are inside the testing box, the practitioner interaction is represented in the initialization box, 
+                and the web services under test are located outside. Interactions between DRT components, practitioner
                 and the web services are depicted in the framework.
             </p>
             <br>
@@ -39,24 +39,23 @@
                 WSDL Parsing
             </h3>
             <p class="content">
-                Web services are composed of services and the relevant WSDL documents. By parsing the WSDL
-                document, we can get the input information for each operation in the services. This includes 
-                the number of parameters, their names and types, and any additional requirements that they 
-                may have.
+                Web service is composed of service and the relevant WSDL document. By parsing the WSDL
+                document, we can get the input information for each operation in the service. This includes 
+                the names and types of parameters, and any additional requirements that they may have.
             </p>
             <p class="content">
-                Practitioners input the address of the web service being tested (the URL of the WSDL), and press 
-                the Parse button to analyze the input and output formats.
+                Practitioners input the address of the web service being tested (the URL of the WSDL), and click 
+                the "Parse" button to analyze the input and output formats.
             </p>
             <h3>
                 <a name="setting"></a>
                 Parameters Setting
             </h3>
             <p class="content">
-                The user first needs to select an operation of the web service under test, and then the following 
-                table automatically displays the corresponding parameter information, including the names and types of 
-                the parameters of selected operation. Users need to divide each parameter into disjoint options 
-                according to the specification. There are two rules that users most follow: 1) the values of discrete 
+                Practitioners first needs to select an operation of the web service under test, and then the following 
+                table automatically displays the corresponding parameters information, including the names and types of 
+                the parameters of selected operation. Besides, practitioners need to divide each parameter into disjoint options 
+                according to the specification. There are two rules that practitioners should follow: 1) the values of discrete 
                 options are represented by sets; 2) the values of successive options are represented by intervals.
             </p>
             <p class="content">
@@ -66,10 +65,10 @@
                 as either domestic or international. For international flights, the baggage allowance is greater if the 
                 passenger is a student (30kg), otherwise it is 20kg. Each aircraft offers three cabins classes from which 
                 to choose (economy, business, and first), with passengers in different classes having different allowances.
-                The detailed price rules are summarized in our papre named <b>Dynamic Random Testing of Web Services:
+                The detailed price rules are summarized in our paper:<b>Dynamic Random Testing of Web Services:
                 A Methodology and Evaluation</b>. <i>ACMS</i> has an interface, named <i>calculateFee</i> that is responsible 
-                to calculate the fee according to the destination, class, and the types of passenhers. The interface
-                <i>calculateFee</i> has the following parameters: airClass, area, isStudent, luggage, and economicfee. We take
+                for calculating the fee according to the destination, class, and the types of passenhers. The <i>calculateFee</i> 
+                interface has the following parameters: airClass, area, isStudent, luggage, and economicfee. We take
                 airClass and lugagage example. The details are described as following:
                 <table border="1">
                     <tr>
@@ -107,27 +106,27 @@
                     </tr>
                     <tr>
                         <td>partition1</td>
-                        <td>1-1;2-1</td>
+                        <td>1-1:{0};2-1:{0}</td>
                     </tr>
                     <tr>
                         <td>partition2</td>
-                        <td>1-1;2-2</td>
+                        <td>1-1{0};2-2:(0,3000]</td>
                     </tr>
                     <tr>
                         <td>partition3</td>
-                        <td>1-2;2-1</td>
+                        <td>1-2{1};2-1:{0}</td>
                     </tr>
                     <tr>
                         <td>partition4</td>
-                        <td>1-2;2-2</td>
+                        <td>1-2{1};2-2:(0,3000]</td>
                     </tr>
                     <tr>
                         <td>partition5</td>
-                        <td>1-3;2-1</td>
+                        <td>1-3{2};2-1:{0}</td>
                     </tr>
                     <tr>
                         <td>partition6</td>
-                        <td>1-3;2-2</td>
+                        <td>1-3{2};2-2:(0,3000]</td>
                     </tr>
                 </table>
             </p>
@@ -136,9 +135,20 @@
                 Test Cases Preparation
             </h3>
             <p class="content">
-                There are two ways for users to generate test cases: 1) randomly generate test cases based on configuration information;
-                2) upload an XML file that contains test cases.
+                There are two ways for users to generate test cases: 1) 
+                randomly generate test cases based on the provided information; 2) upload an Json 
+                file that contains test cases. For the first method, practitioners The user needs
+                to specify the maximum number of test cases to be generated. As for the second method,
+                there are some rules for practitioners to create Json file: 1) the index <i>p</i> (which is the natural
+                number starting from 0) of partition should be the key. Accordingly, its test cases are the
+                corresponding value. Moreover, test cases are also presented in Json format. "testcase_w" presents
+                the w<sup>th</sup> test case of partition <i>p</i>. All test cases must contain the "expectedResult" 
+                attribute, the value of which is used as an oracle to determine whether the test case reveals a fault.
+                The following figure shows a Json file that contains test cases.    
             </p>
+            <div>
+                <img src="../../assets/json.png" width=50%> 
+            </div>
         </el-row>
     </div>
 </template>

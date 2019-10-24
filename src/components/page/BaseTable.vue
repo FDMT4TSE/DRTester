@@ -178,7 +178,7 @@
                             <el-upload
                             class="handle-upload-button"
                             ref="upload"
-                            action="http://202.204.62.171:8082/api/upload/testcase"
+                            action="http://202.204.62.25:8082/api/upload/testcase"
                             :on-remove="handleRemove"
                             :before-remove="beforeRemove"
                             :limit="1"
@@ -263,7 +263,7 @@
                     return;
                 }
                 this.$post({
-                    url: 'http://202.204.62.171:8082/api/parse/wsdl',
+                    url: 'http://202.204.62.25:8082/api/parse/wsdl',
                     data: {
                         address: this.select_word
                     }
@@ -320,7 +320,7 @@
                     }
                 }
                 this.$post({
-                    url: 'http://202.204.62.171:8082/api/set/choices',
+                    url: 'http://202.204.62.25:8082/api/set/choices',
                     data: params
                 }).then(res => {
                     console.log(res);
@@ -337,7 +337,7 @@
                     params[i] = `${choice},${profile},${parameter}`;
                     }
                     this.$post({
-                    url: 'http://202.204.62.171:8082/api/set/partitionscheme',
+                    url: 'http://202.204.62.25:8082/api/set/partitionscheme',
                     data: params
                     }).then(res => {
                     console.log(res);
@@ -360,7 +360,7 @@
                     return;
                 }
                 this.$post({
-                    url: 'http://202.204.62.171:8082/api/generate/testcases',
+                    url: 'http://202.204.62.25:8082/api/generate/testcases',
                     data: {
                         number: this.numberOfTestCases,
                         flag: this.isRandom
