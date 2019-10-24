@@ -89,7 +89,7 @@
             getData(){},
             startTest() {
                 this.$get({
-                    url: 'http://202.204.62.171:8082/api/execute/first/testcases',
+                    url: 'http://202.204.62.25:8082/api/execute/first/testcases',
                     params: {}
                 }).then(res => {
                     console.log('res', res);
@@ -116,7 +116,7 @@
                     return;
                 }
                 this.$post({
-                    url: 'http://202.204.62.171:8082/api/execute/next/testcases',
+                    url: 'http://202.204.62.25:8082/api/execute/next/testcases',
                     data: {
                     isKilledMutant: this.tableTestProcess[this.tableTestProcess.length - 1].isKilledMutant,
                     }
@@ -144,7 +144,7 @@
             downloadTest() {
                 let tagA = document.createElement('a');
                 tagA.id = 'tag-a';
-                tagA.href = 'http://202.204.62.171:8082/api/download/testing/result';
+                tagA.href = 'http://202.204.62.25:8082/api/download/testing/result';
                 document.body.appendChild(tagA);
                 tagA.click();
                 document.body.removeChild(tagA);
