@@ -2,23 +2,23 @@
 
 # Table of contents
 
-Table of contents
-DRTester
-&nbsp;&nbsp;Framework
-&nbsp;&nbsp;Front-end interface
-&nbsp;&nbsp;Back-end logic
-&nbsp;&nbsp;&nbsp;&nbsp;WSDL parsing service
-&nbsp;&nbsp;&nbsp;&nbsp;Restful Micro-Services
-&nbsp;&nbsp;Configuration
-&nbsp;&nbsp;&nbsp;&nbsp;Configuration for front-end interface
-&nbsp;&nbsp;&nbsp;&nbsp;Configuration for back-end logic
-&nbsp;&nbsp;An example
-&nbsp;&nbsp;Specification of the web service under test
-&nbsp;&nbsp;&nbsp;&nbsp;Step 1: Specifying the url and setting parameters
-&nbsp;&nbsp;&nbsp;&nbsp;Step 2: Partition construction and parameter setting
-&nbsp;&nbsp;&nbsp;&nbsp;Step 3: Test case preparation
-&nbsp;&nbsp;&nbsp;&nbsp;Step 4: Test case execution
-
+Table of contents <br>
+DRTester <br>
+&nbsp;&nbsp;Framework <br>
+&nbsp;&nbsp;Front-end interface <br>
+&nbsp;&nbsp;Back-end logic <br>
+&nbsp;&nbsp;&nbsp;&nbsp;WSDL parsing service <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Restful Micro-Services <br>
+&nbsp;&nbsp;Configuration <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Configuration for front-end interface <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Configuration for back-end logic <br>
+&nbsp;&nbsp;An example <br>
+&nbsp;&nbsp;Specification of the web service under test <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Step 1: Specifying the url and setting parameters <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Step 2: Partition construction and parameter setting <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Step 3: Test case preparation <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Step 4: Test case execution <br>
+ 
 # DRTester
 
 The prototype tool *DRTester* supports dynamic random testing for web service testing. In this document, we describe the implementation and usage of the tool in detail.
